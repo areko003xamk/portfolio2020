@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ot4e</title>
+</head>
+<body>
+<p id="vuosi"></p><br>
+<button type="button" onclick="henkiloTunnus()">Paina</button><br>
+<p id="hetu"></p><br>
+<p id="suorite"></p>
+<script>
+var laskenta;
+var henkilot = [1960, 1994, 1970, 1967, 1998, 1987];
+document.getElementById("vuosi").innerHTML = henkilot.join("<br>");
+/*
+Funktio henkiloTunnus suoritetaan painiketta painamalla. Se kutsuu etsiVuosi-funktiota, joka palauttaa
+ennen vuotta 1990 syntyneiden syntymävuodet osuus-muuttujaan. Sen jälkeen se kutsuu suoritaLasku-funktiota, joka
+suorittaa varsinaisen laskutoimituksen ja palauttaa saadun tuloksen laskenta-muuttujaan, joka
+tulostetaan ja pyöristetään yhteen desimaaliin.
+*/
+function henkiloTunnus(){
+var osuus = document.getElementById("hetu").innerHTML = henkilot.filter(etsiVuosi);
+laskenta = suoritaLasku(osuus, henkilot);
+document.getElementById("suorite").innerHTML = "Ennen vuotta 1990 syntyneet: " + laskenta.toFixed(1) + " prosenttia";
+}
+function etsiVuosi(tyypit){
+return tyypit < 1990;
+}
+function suoritaLasku(luvut, heput){
+var tulos = luvut.length / heput.length * 100;
+return tulos;
+}
+</script>
+</body>
+</html>
