@@ -1,0 +1,32 @@
+h2{
+background-color: #800000;
+color: #FFFFFF;
+font-family: helvetica;
+}
+p{
+font-family: Arial;
+}
+h1{
+background-color: #DC143C;
+margin: 5px;
+color: #FFFFFF;
+}
+.footer{
+text-align: center;
+background-color: #DC143C;
+color: #FFFFFF;
+margin: 5px;
+}
+h3{
+background-color: #800000;
+color: #FFFFFF;
+font-family: helvetica;
+width: 330px;
+}
+.header i{
+float: right;	
+}
+hr{
+width: 330px;
+margin-left: 0px;
+}

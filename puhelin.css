@@ -1,0 +1,22 @@
+/*Testattu Firefoxin emulaattorilla: Galaxy S9/S9+ ja iPhone 6/7/8*/
+@media screen and (max-width: 480px){
+img{
+width: 330px;
+height: 220px;
+}
+p{
+width: 330px;	
+}
+h2{
+width: 330px;
+}
+.pitka{
+display:none;
+}
+.lyhyt{
+padding: 15px 0px 15px 10px;
+}
+.footer{
+padding: 10px 0px 10px 0px;
+}
+}
