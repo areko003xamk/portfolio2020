@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ot1c</title>
+<link rel="stylesheet" href="ot1c.css">
+</head>
+<body>
+<div class="center">
+<h1>PC-pakettilaskuri</h1>
+<table id="laatikko"><tr><td>
+<form>
+<fieldset>
+<label for="hinta1">Emolevy: </label><input class="input" id="hinta1" name="hinta1"><br>
+<label for="hinta2">Prosessori: </label><input class="input" id="hinta2" name="hinta2"><br>
+<label for="hinta3">Muisti: </label><input class="input" id="hinta3" name="hinta3"><br>
+<label for="hinta4">Kiintolevy: </label><input class="input" id="hinta4" name="hinta4"><br>
+<label for="hinta5">Kotelo: </label><input class="input" id="hinta5" name="hinta5"><br>
+<label for="hinta6">Näytönohjain: </label><input class="input" id="hinta6" name="hinta6"><br>
+<label for="hinta7">Virtalähde: </label><input class="input" id="hinta7" name="hinta7"><br><br>
+<button type="button" onclick="laskeHinta();">Kokonaishinta</button>
+<div id="veloitus"></div>
+<script>
+//Laskee syötetyt luvut yhteen ja tulostaa kokonaissumman.
+function laskeHinta(){
+var luku1 = Number(document.getElementById("hinta1").value);
+var luku2 = Number(document.getElementById("hinta2").value);
+var luku3 = Number(document.getElementById("hinta3").value);
+var luku4 = Number(document.getElementById("hinta4").value);
+var luku5 = Number(document.getElementById("hinta5").value);
+var luku6 = Number(document.getElementById("hinta6").value);
+var luku7 = Number(document.getElementById("hinta7").value);
+var summa = luku1 + luku2 + luku3 + luku4 + luku5 + luku6 + luku7;
+document.getElementById("veloitus").innerHTML = "Paketin hinta: " + summa + " euroa";
+}
+</script>
+</fieldset>
+</form>
+</td></tr></table>
+</div>
+</body>
+</html>

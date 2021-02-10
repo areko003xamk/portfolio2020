@@ -1,0 +1,26 @@
+body {
+font-family: "Arial";
+}
+label {
+width: 100px;
+display: block;
+float: left;
+}
+fieldset {
+border: 1px solid black;
+width: 300px;
+}
+#laatikko {
+border: 2px solid black;
+}
+.center {
+margin: auto;
+width: 50%;
+}
+.button {
+background-color: #9932cc;
+color: white;
+}
+.input {
+background-color: #f5f5dc;
+}
