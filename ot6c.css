@@ -1,0 +1,36 @@
+.kohdeHaku{
+border-radius: 8px;
+box-shadow: 2px 2px 2px 2px;
+font-size: 25px;
+height: 25px;
+width: 200px;
+}
+.hakuNappula{
+border-radius: 8px;
+background-color: #F0E68C;
+box-shadow: 2px 2px 2px 2px;
+font-size: 20px;
+margin-right: 30px;
+margin-left: 20px;
+}
+#hakuLoota{
+text-align: center;
+}
+table{
+font-family: Arial, sans-serif;
+border-collapse: collapse;
+width: 100%;
+}
+table td{
+font-size: 25px;
+padding: 10px;
+background-color: #f2f2f2;
+}
+table th{
+font-size: 20px;
+padding: 10px;
+background-color: #FFFFF0;
+}
+body{
+background-color: #ADFF2F;
+}

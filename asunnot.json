@@ -1,0 +1,23 @@
+[
+{
+"kohdenro" : "101",
+"katuosoite" : "Keskuskatu 10",
+"postinro" : "12345",
+"ptp" : "Touhula",
+"hinta" : "300 000 €"
+},
+{
+"kohdenro" : "102",
+"katuosoite" : "Laitakatu 34",
+"postinro" : "54321",
+"ptp" : "Syrjälä",
+"hinta" : "150 000 €"
+},
+{
+"kohdenro" : "103",
+"katuosoite" : "Syrjäkatu 19",
+"postinro" : "24681",
+"ptp" : "Perälä",
+"hinta" : "50 000 €"
+}
+]
