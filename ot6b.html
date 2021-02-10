@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ot6b</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ot6b.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="bootstrap-datepicker.min.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="bootstrap-datepicker.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="bootstrap-datepicker.fi.min.js" charset="UTF-8"></script>
+<script src="ot6b.js"></script>
+<script src="vihje.js"></script>
+<script src="modaali.js"></script>
+<script src="tallennus.js"></script>
+</head>
+<body>
+<div class="container">
+<form action="" class="form-horizontal">
+<fieldset>
+<legend>Reiskan autovuokraamo Oy</legend>
+<h4>Skoda Superb 120 €/vrk</h4>
+<div class="control-group">
+<label class="control-label">Vuokrauspäivä</label>
+<div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+<input id="alku" size="16" type="text" value="" readonly>
+<span class="add-on"><i class="icon-remove"></i></span>
+<span class="add-on"><i class="icon-th"></i></span>
+</div>
+<input type="hidden" id="dtp_input2" value="" /><br/>
+</div>
+<div class="control-group">
+<label class="control-label">Palautuspäivä</label>
+<div class="controls input-append date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+<input id="loppu" size="16" type="text" value="" readonly>
+<span class="add-on"><i class="icon-remove"></i></span>
+<span class="add-on"><i class="icon-th"></i></span>
+</div>
+<input type="hidden" id="dtp_input2" value="" /><br/>
+</div>
+<div class="form-group row">
+<div class="col-xs-3">
+  <label for="nimi">Nimi:</label>
+  <input type="text" class="form-control" id="nimi" class="nimi" datatoggle="tooltip" title="Kirjoita etu- ja sukunimi">
+</div>
+</div>
+<div class="form-group row">
+<div class="col-xs-3">
+  <label for="email">Sähköposti:</label>
+  <input type="text" class="form-control" id="email" class="email" datatoggle="tooltip" title="Kirjoita sähköpostiosoite">
+</div>
+</div>
+<div class="form-group row">
+<div class="col-xs-3">
+  <label for="puhelin">Puhelin:</label>
+  <input type="text" class="form-control" id="puhelin" class="puhelin" datatoggle="tooltip" title="Kirjoita puhelinnumero">
+</div>
+</div>
+<button type="button" id="modaaliNappi"  class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Vahvista varaus</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Vuokrauksen tiedot</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="tulostus">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Peruuta</button>
+        <button type="button" class="btn btn-primary" id="tallennusNappi">Hyväksy</button>
+      </div>
+    </div>
+  </div>
+</div>
+</fieldset>
+</form>
+</div>
+</body>
+</html>
