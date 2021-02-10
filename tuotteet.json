@@ -1,0 +1,34 @@
+[
+{
+"tuote" : "Tuote",
+"hinta" : "Hinta"
+},
+{
+"tuote" : "Kirves",
+"hinta" : "80"
+},
+{
+"tuote" : "Saha",
+"hinta" : "60"
+},
+{
+"tuote" : "Vatupassi",
+"hinta" : "25"
+},
+{
+"tuote" : "Sorkkarauta",
+"hinta" : "75"
+},
+{
+"tuote" : "Moottorisaha",
+"hinta" : "300"
+},
+{
+"tuote" : "Naulapyssy",
+"hinta" : "160"
+},
+{
+"tuote" : "Pehmonalle",
+"hinta" : "35"
+}
+]

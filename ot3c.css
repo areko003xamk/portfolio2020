@@ -1,40 +1,33 @@
-body {
+body{
+max-width:480px;
+margin:auto;
+font-family: sans-serif, Arial;
+}
+.nappula{
+border-radius: 6px;
+background-color: #ADFF2F;
 font-size: 20px;
-font-family: arial;
-background-color: #adfab7;
+width: 200px;
+height:100px;
 }
-label {
-width: 160px;
-display: block;
-float: left;
+#painike{
+border-radius: 8px;
+background-color: #FF8C00;
+box-shadow: 2px 2px 2px 2px;
+font-size: 16px;
 }
-#sivu {
-display: table;
-width: 100%;
+#tuotehinta{
+border-radius: 10px;
+box-shadow: 4px 4px 2px 2px;
+font-size: 16px;
+height: 18px;
+width: 250px;
 }
-#vasen {
-display: table-cell;
-vertical-align: top;
-width: 45%;
+#tuote{
+border-radius: 8px;
+box-shadow: 2px 2px 2px 2px;
+font-size: 16px;
+height: 20px;
+width: 150px;
 }
-#oikea {
-display: table-cell;
-vertical-align: top;
-width: 55%;
-}
-fieldset {
-width: 800px;
-vertical-align: auto;
-background-image: url(taustakuva.jpg);
-}
-.center {
-margin: auto;
-width: 50%;
-}
-img {
-width: 100px;
-height: 40px;
-display: block;
-margin-left: auto;
-margin-right: auto;
 }

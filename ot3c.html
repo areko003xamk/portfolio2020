@@ -1,57 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ot3c</title>
+<meta charset="utf-8">
 <link rel="stylesheet" href="ot3c.css">
+<title>ot3c</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="ot3c.js"></script>
+<script src="ot3c_haku.js"></script>
 </head>
 <body>
-<h2>MYYT&AumlV&AumlT JA VUOKRATTAVAT ASUNNOT</h2>
-<fieldset>
-<div class="center"><h4>Esim. postinumero tai kunta</h4></div>
-<form><p>
-<label for="alue">Alue</label><input id="alue" type="text" name="Alue" size="85"><br><br>
-<div id="sivu">
-<div id="vasen">
-<label for="asuntotyyppi">Asuntotyyppi</label>
-<select name="asuntotyyppi" id="asuntotyyppi">
-<option>Kerrostalo</option>
-<option>Rivitalo</option>
-</select>
-<br><br>
-<label for="lammitysmuoto">L&aumlmmitysmuoto</label>
-<select name="lammitysmuoto" id="lammitysmuoto">
-<option>Turve</option>
-<option>Polttopuut</option>
-<option>&oumlljy</option>
-</select>
-<br><br>
-<label for="huoneluku">Huoneluku</label>
-<select name="huoneluku" id="huoneluku">
-<option>1</option>
-<option>2</option>
-</select>
-<br><br>
-<label for="pintaala">Neli&oumlit&auml</label>
-<select name="pintaala" id="pintaala">
-<option>Alle 30</option>
-<option>Yli 30</option>
-</select>
-</div>
-<div id="oikea">
-<label for="minhinta">Minimihinta</label><input id="minhinta" type="text" name="minhinta" size="20"><br><br>
-<label for="maxhinta">Maksimihinta</label><input id="maxhinta" type="text" name="maxhinta" size="20"><br><br>
-<label for="askunto">Asunnon kunto</label>
-<select name="askunto" id="askunto">
-<option>Huono</option>
-<option>Hyv&auml</option>
-</select><br><br>
-<input type="radio" name="omistus" value="omistus" checked>Omistus
-<input type="radio" name="vuokra" value="vuokra">Vuokra
-</div>
-</div>
-<br>
-<img src="hakunappi.png">
-</form>
-</fieldset>
+<h1>Reiskan rautakauppa</h1>
+<button id="tulosta" class="nappula">Tulosta taulukko</button><br><br>
+<input id="tuote" placeholder="Syötä tuote..."/><br><br>
+<button id="painike">Hae hinta</button><br><br>
+<div id="hinta"></div>
+<h1>Tuoteluettelo</h1>
+<div id="paikka"></div>
 </body>
 </html>
