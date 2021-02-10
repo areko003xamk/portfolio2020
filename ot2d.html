@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ot2d</title>
+</head>
+<body>
+<h1>Lippuautomaatti</h1>
+<br>
+2. luokka: <input type="radio" id="luokka2" name="luokka" value="luokka2" checked><br>
+1. luokka: <input type="radio" id="luokka1" name="luokka" value="luokka1"><br><br>
+Meno: <input type="radio" id="meno" name="matka" value="meno" checked><br>
+Meno-paluu: <input type="radio" id="menopaluu" name="matka" value="menopaluu"><br><br>
+Alennus: <input type="checkbox" style="vertical-align: left" name="alennus" value="alennus" id="ruutu">
+(Opiskelijat ja eläkeläiset: 2. luokan liput puoleen hintaan.)<br><br>
+<label for="liput">Lippuja (kpl): </label>
+<select name="liput" id="liput">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select><br><br>
+<button type="button" onclick="laskeHinta()">Osta</button><br><br>
+<div id="kokohinta"></div>
+<script>
+//Laskee lippujen hinnan.
+function laskeHinta(){
+var toka = 86.10;
+var eka = 140.61;
+var tulostus = "";
+var liput = document.getElementById("liput").value;//Lukee valittujen lippujen määrän.
+//Jos ehto on tosi, suorittaa aaltosulkujen sisällä olevat komennot.
+if (document.getElementById("luokka2").checked && document.getElementById("meno").checked){
+tulostus = liput * toka;
+}
+if (document.getElementById("luokka2").checked && document.getElementById("menopaluu").checked){
+tulostus = liput * toka * 2;
+}
+if (document.getElementById("luokka2").checked && document.getElementById("ruutu").checked){
+tulostus = liput * toka * 0.5;
+}
+if (document.getElementById("luokka1").checked && document.getElementById("meno").checked){
+tulostus = liput * eka;
+}
+if (document.getElementById("luokka1").checked && document.getElementById("menopaluu").checked){
+tulostus = liput * eka * 2;
+}
+document.getElementById("kokohinta").innerHTML = "Kokonaishinta: " + tulostus + " euroa";//Tulostaa kokonaishinnan.
+}
+</script>
+</body>
+</html>
