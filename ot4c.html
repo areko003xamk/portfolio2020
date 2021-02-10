@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ot4c</title>
+</head>
+<body>
+Syötä postinumero: <input id="pnro"/><br><br>
+<button type="button" onclick="postiNumero()">Tarkista</button><br><br>
+<h2 id="tulostus"></h2>
+<script>
+//Painikkeen klikkaus kutsuu tätä funktiota, joka kutsuu tarkastaPostiNumero-funktiota, joka
+//palauttaa ehdon täyttyessä true ja muuten false.
+function postiNumero(){
+var postinro = document.getElementById("pnro").value;//Lukee syötteen.
+var pituus = postinro.length;//Laskee merkkijonon pituuden.
+var postikutsu = tarkastaPostiNumero(pituus);//Funktion kutsun sisältävä muuttuja, saa palautetun arvon.
+document.getElementById("tulostus").innerHTML = postikutsu;//Tulostaa alemman funktion palauttaman arvon.
+}
+function tarkastaPostiNumero(mitta){
+if (mitta == 5){
+return true;
+}
+else{
+return false;
+}
+}
+</script>
+</body>
+</html>
