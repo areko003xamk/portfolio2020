@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<title>Reiskan vaatekauppa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="vaatekauppa.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<script src="fashion_news.js"></script>
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b><div class="w3-tangerine">Reiskan vaatekauppa</div></b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="miehet.html" class="w3-bar-item w3-button">Miehet</a>
+    <a href="naiset.html" class="w3-bar-item w3-button">Naiset</a>
+    
+  </div>
+  <a href="#footer" class="w3-bar-item w3-button w3-padding">Yhteydenotto</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Uutiskirje</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Tilaus</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Reiskan vaatekauppa tarjoaa jokaiselle itseään arvostavalle miehelle ja naiselle
+	innovatiivisen trendikkään pukeutumiskonseptin. Laajasta valikoimasta löytyy varmasti mieleisiä tuotteita
+	sekä paksummalle että ohuemmalle lompakolle.</p>
+    </header>
+
+	<h2>Reiskan muotiuutiset</h2>
+	<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align"><div id="nappi">
+Kevään muoti on entistä sporttisempi - katso kuvat ihanista takeista 23.03.2016</div></button>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>Tänä keväänä saa pukeutua vielä viime kevättäkin sporttisemmin: unohda trenssit ja nahkarotsit, sillä juuri nyt on trendikkäintä vetäistä päälle sporttinen pusakkamallinen pilottitakki.</p>
+	<p>Mikäli muodikkuuden ohjenuorana pidetään julkkiksia ja muotibloggaajia, sporttinen pusakka todella on tämän kevään takki. Sen ei kuitenkaan tarvitse olla tylsä musta tai sininen, vaan kaikista muodikkain se on ihanan naisellisena kukkakuosilla!</p>
+	</div>
+
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align"><div id="nappi">Kierrättäminen kannattaa: Merkkivaatteissa arvo säilyy todella hyvin 16.03.2016</div></button>
+<div id="Demo2" class="w3-hide w3-container">
+    <p>Suomessa käytettyjen vaatteiden ja kenkien kierrättäminen on todella helppoa, sillä kauppa käy vilkkaana netissä. Monien merkkivaatteiden jälleenmyynti on taattu, joskus jopa voitolla. Katso, mitkä merkit käyvät parhaiten kaupaksi käytettynä.</p>
+</div>
+
+<button onclick="myFunction('Demo3')" class="w3-button w3-block w3-black w3-left-align"><div id="nappi">Tässä on kevään muodikkain takki! 10.02.2016</div></button>
+<div id="Demo3" class="w3-hide w3-container">
+<p>Päivien kirkastuessa ja lämmetessä untuvapomppa on aika vaihtaa keveämpään asuun. Aivan kesätamineisiin ei vielä Suomen keväässä voida siirtyä, mutta keveät mutta lämpimät kevättakit lämmittävät ihanasti ja istuvat ihanan tyylikkäästi paksujen toppavaatteiden jälkeen.</p>
+</div>
+
+<button onclick="myFunction('Demo4')" class="w3-button w3-block w3-black w3-left-align"><div id="nappi">Nämä viime vuoden vaatetrendit jäävät nyt unholaan! 10.01.2016</div></button>
+<div id="Demo4" class="w3-hide w3-container">
+<p>Viime vuosi tunnetaan erilaisista trendien sekoituksista. Yksi erikoisimmista trendeistä oli pesunkestävät terveyssandaalit vaatteiden kuin vaatteiden kanssa, mutta muoti jäänee tänä vuonna historiaan. Katso mitkä muut viime vuoden villitykset jäänevät unholaan.</p>
+</div><br><br>
+	
+	
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Yhteydenotto</h4>
+        <p>Kysy meiltä!</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nimi" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Sähköposti" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Aihe" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Viesti" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Lähetä</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>Tietoa</h4>
+        <p><a href="#">Tietoa meistä</a></p>
+        <p><a href="#">Työpaikat</a></p>
+        <p><a href="#">Tuki</a></p>
+        <p><a href="#">Löydä myymälä</a></p>
+        <p><a href="#">Lähetys</a></p>
+        <p><a href="#">Maksaminen</a></p>
+        <p><a href="#">Lahjakortit</a></p>
+        <p><a href="#">Palautus</a></p>
+        <p><a href="#">Apua</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Kauppa</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Reiskan vaatekauppa</p>
+        <p><i class="fa fa-fw fa-phone"></i> 12345678</p>
+        <p><i class="fa fa-fw fa-envelope"></i> reivaa@gmail.com</p>
+        
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">COPYRIGHT &copy; REIJO KONTTURI 2019</div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">UUTISKIRJE</h2>
+      <p>Liity postituslistallemme saadaksesi tuoreimmat uutuudet ja erikoistarjoukset.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Syötä sähköpostiosoite"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Tilaa</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

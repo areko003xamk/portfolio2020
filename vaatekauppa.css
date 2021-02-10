@@ -1,0 +1,8 @@
+.w3-tangerine {
+font-family: "Tangerine", serif;
+}
+@media screen and (max-width: 480px){
+#nappi{
+font-size: 8px;
+}
+}
