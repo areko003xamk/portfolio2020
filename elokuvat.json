@@ -1,0 +1,79 @@
+[
+{
+"numero" : "Numero",
+"elokuva" : "Elokuva",
+"vuosi" : "Vuosi",
+"kategoria" : "Kategoria",
+"ohjaaja" : "Ohjaaja"
+},
+{
+"numero" : "101",
+"elokuva" : "Kourallinen dollareita",
+"vuosi" : "1964",
+"kategoria" : "Spagettiwestern",
+"ohjaaja" : "Sergio Leone"
+},
+{
+"numero" : "102",
+"elokuva" : "Vain muutaman dollarin tähden",
+"vuosi" : "1965",
+"kategoria" : "Spagettiwestern",
+"ohjaaja" : "Sergio Leone"
+},
+{
+"numero" : "103",
+"elokuva" : "Hyvät, pahat ja rumat",
+"vuosi" : "1966",
+"kategoria" : "Spagettiwestern",
+"ohjaaja" : "Sergio Leone"
+},
+{
+"numero" : "104",
+"elokuva" : "Imperiumin vastaisku",
+"vuosi" : "1980",
+"kategoria" : "Sci-fi",
+"ohjaaja" : "Irvin Kershner"
+},
+{
+"numero" : "105",
+"elokuva" : "Arvottomat",
+"vuosi" : "1982",
+"kategoria" : "Road Movie",
+"ohjaaja" : "Mika Kaurismäki"
+},
+{
+"numero" : "106",
+"elokuva" : "Hei me lennetään!",
+"vuosi" : "1980",
+"kategoria" : "Komedia",
+"ohjaaja" : "Jim Abrahams"
+},
+{
+"numero" : "107",
+"elokuva" : "Mies ja alaston ase",
+"vuosi" : "1988",
+"kategoria" : "Komedia",
+"ohjaaja" : "David Zucker"
+},
+{
+"numero" : "108",
+"elokuva" : "Diktaattori",
+"vuosi" : "1940",
+"kategoria" : "Komedia",
+"ohjaaja" : "Charles Chaplin"
+},
+{
+"numero" : "109",
+"elokuva" : "Linnut",
+"vuosi" : "1963",
+"kategoria" : "Kauhu",
+"ohjaaja" : "Alfred Hitchcock"
+},
+{
+"numero" : "110",
+"elokuva" : "Sukellusvene U-96",
+"vuosi" : "1981",
+"kategoria" : "Sota",
+"ohjaaja" : "Wolfgang Petersen"
+}
+]
