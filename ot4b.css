@@ -1,0 +1,51 @@
+.content {
+width: 960px;
+margin: auto;
+border: 1px solid grey;
+}
+#header {
+background-color: #80ced6;
+font-family: broadway;
+font-size: 35px;
+color: #ffffff;
+}
+#footer {
+background-color: #80ced6;
+}
+#palstat {
+display: table;
+width: 100%;
+}
+#palsta1 {
+display: table-cell;
+width: 210px;
+vertical-align: top;
+padding: 10px;
+font-family: verdana;
+font-size: 12px;
+}
+#palsta2 {
+display: table-cell;
+width: 460px;
+vertical-align: top;
+padding: 10px;
+font-family: times new roman;
+font-size: 16px;
+}
+#palsta3 {
+display: table-cell;
+width: 210px;
+vertical-align: top;
+padding: 10px;
+}
+#pal3head {
+background-color: #80ced6;
+color: #ffffff;
+}
+img {
+float: right;
+margin-left: 5px;
+}
+a:hover {
+color: red;
+}
