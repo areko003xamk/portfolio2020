@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ot4h</title>
+</head>
+<body>
+<h1>Kiinteistöohjelma</h1>
+Kohdenumero: <input id="kohde"/>
+<button type="button" onclick="haeTiedot()">Hae tiedot</button><br>
+<p id="tulostus"></p>
+<p id="neliohinta"></p>
+<script>
+//Tämä ohjelma tulostaa myytävän asunnon tiedot.
+function Asunto(yksi, kaksi, kolme, nelja){//Constructor-funktio Asunto-oliolle.
+this.yksi = yksi;
+this.kaksi = kaksi;
+this.kolme = kolme;
+this.nelja = nelja;
+}
+//Luodaan Asunto-olio.
+var yksioAsunto = new Asunto(101, "Kallantie", 30000, 31);
+var kaksioAsunto = new Asunto(102, "Kumputie", 45000, 54);
+var kolmioAsunto = new Asunto(103, "Vääpelinkatu", 67000, 75);
+var omakotitaloAsunto = new Asunto(104,"Ruskeintie", 140000, 140);
+//Hakutoiminto myytävän asunnon tietojen hakemiseksi. Ehdon täyttyessä tulostaa kohteen tiedot ja neliöhinnan.
+function haeTiedot(){
+var kohdetiedot = Number(document.getElementById("kohde").value);//Lukee syötetyn kohdenumeron.
+if (kohdetiedot == 101){
+//Tulostaa kohteen tiedot.
+document.getElementById("tulostus").innerHTML = yksioAsunto.yksi + " Osoite: " + yksioAsunto.kaksi + ",  Hinta: " + yksioAsunto.kolme + " euroa" + ",  Pinta-ala: " + yksioAsunto.nelja + " m2";
+var hinta1 = yksioAsunto.kolme / yksioAsunto.nelja;//Laskee neliöhinnan.
+document.getElementById("neliohinta").innerHTML = "Neliöhinta: " + hinta1.toFixed(2) + " euroa";//Tulostaa neliöhinnan.
+}
+if (kohdetiedot == 102){
+document.getElementById("tulostus").innerHTML = kaksioAsunto.yksi + " Osoite: " + kaksioAsunto.kaksi + ",  Hinta: " + kaksioAsunto.kolme + " euroa" + ",  Pinta-ala: " + kaksioAsunto.nelja + " m2";
+var hinta2 = kaksioAsunto.kolme / kaksioAsunto.nelja;
+document.getElementById("neliohinta").innerHTML = "Neliöhinta: " + hinta2.toFixed(2) + " euroa";
+}
+if (kohdetiedot == 103){
+document.getElementById("tulostus").innerHTML = kolmioAsunto.yksi + " Osoite: " + kolmioAsunto.kaksi + ",  Hinta: " + kolmioAsunto.kolme + " euroa" + ",  Pinta-ala: " + kolmioAsunto.nelja + " m2";
+var hinta3 = kolmioAsunto.kolme / kolmioAsunto.nelja;
+document.getElementById("neliohinta").innerHTML = "Neliöhinta: " + hinta3.toFixed(2) + " euroa";
+}
+if (kohdetiedot == 104){
+document.getElementById("tulostus").innerHTML = omakotitaloAsunto.yksi + " Osoite: " + omakotitaloAsunto.kaksi + ",  Hinta: " + omakotitaloAsunto.kolme + " euroa" + ",  Pinta-ala: " + omakotitaloAsunto.nelja + " m2";
+var hinta4 = omakotitaloAsunto.kolme / omakotitaloAsunto.nelja;
+document.getElementById("neliohinta").innerHTML = "Neliöhinta: " + hinta4.toFixed(2) + " euroa";
+}
+}
+</script>
+</body>
+</html>
