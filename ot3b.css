@@ -1,0 +1,22 @@
+fieldset {
+width: 400px;
+background-color: green;
+}
+legend {
+background-color: yellow;
+}
+textarea {
+width: 380px;
+height: 250px;
+}
+.button {
+background-color: green;
+color: white;
+}
+body {
+font-family: Verdana;
+}
+.center {
+margin: auto;
+width: 50%;
+}
