@@ -1,0 +1,110 @@
+body {
+width: 960px;
+margin: auto;
+background-color: #B0E0E6;
+font-family: Arial;
+border: 4px solid lightgreen;
+}
+#head_etusivu {
+font-size: 45px;
+font-weight: bold;
+margin-top: 2em;
+text-align: center;
+}
+h2 {
+font-size: 40px;
+font-weight: bold;
+margin-top: 1.5em;
+text-align: center;
+}
+#sisaan {
+width: 5em;
+margin: auto;
+text-align: center;
+font-size: 30px;
+background-color: #DCDCDC;
+}
+#head_sivut {
+font-size: 30px;
+font-weight: bold;
+margin-top: 0.5em;
+text-align: center;
+}
+#taulukko {
+width: 40%;
+margin: auto;
+font-size: 20px;
+}
+#linkit {
+width: 200px;
+margin: auto;
+}
+#taulukko_edu {
+width: 80%;
+margin: auto;
+font-size: 20px;
+}
+p {
+width: 75%;
+margin: auto;
+font-size: 20px;
+}
+ol {
+width: 50%;
+margin: auto;
+font-size: 20px;
+}
+textarea {
+width: 350px;
+height: 200px;
+}
+form {
+width: 40%;
+margin: auto;
+}
+.button {
+background-color: #66CDAA;
+color: white;
+width: 70px;
+height: 40px;
+}
+#pal_center {
+width: 40%;
+margin: auto;
+}
+img {
+width: 100px;
+height: 120px;
+}
+#omakuva {
+width: 20%;
+margin: auto;
+}
+#footer {
+	width: 960px;
+	height: 15px;
+	text-align: center;
+	font-size: 15px;
+	border: 1px solid black;
+	font-family: Verdana;
+	clear: both;
+}
+a:hover {
+color: red;
+}
+#esittely_linkit {
+width: 450px;
+margin: auto;
+}
+#kuvat {
+width: 20%;
+margin: auto;
+}
+#sijainti {
+vertical-align: top;
+}
+#kuva:hover{
+width:200px;
+height:200px;
+transition:2s;
+transform:rotate(360deg);
