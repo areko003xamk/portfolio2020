@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ot2f</title>
+</head>
+<body>
+<h1>Sijoituslaskuri</h1>
+<h2>Alkupääoma:</h2>
+<input id="alku"/>
+<h2>Tavoitepääoma:</h2>
+<input id="tavoite"/>
+<h2>Arvioitu tuottoprosentti:</h2>
+<input id="prosentti"/><br><br>
+<button type="button" onclick="laskeAika()">Laske</button><br><br>
+<h3 id="tulos"></h3>
+<script>
+function laskeAika(){
+var paaoma = Number(document.getElementById("alku").value);
+var tavoite = Number(document.getElementById("tavoite").value);
+var korko = Number(document.getElementById("prosentti").value);
+var i = 0;
+do {
+paaoma = paaoma + (paaoma * (korko / 100));
+i++;
+} while (paaoma < tavoite);
+document.getElementById("tulos").innerHTML = "Tavoitteen saavuttamiseen menee " + i  + " vuotta.";
+}
+</script>
+</body>
+</html>
