@@ -1,0 +1,18 @@
+body{
+max-width:480px;
+margin:auto;
+}
+label {
+width: 170px;
+display: block;
+float: left;
+}
+#muotoilu{
+font-family: "Times new roman";
+font-size: 20px;
+}
+fieldset {
+width: 400px;
+height: 350px;
+background-color: #FFD700;
+}
